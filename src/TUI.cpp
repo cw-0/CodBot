@@ -19,7 +19,7 @@ void TUI::run() {
                 exit(0);
 
             case 1:
-                startBot(3);
+                startBot(5);
 
             case 2:
                 settingsMenu();
@@ -58,11 +58,9 @@ void TUI::startBot(int waitTime) {
     Utils::clearTerm();
 
     Movement::rightMouseHold();
-    Movement::leftMouseClick();
-    Movement::leftMouseClick();
-    Movement::leftMouseClick();
-    Movement::leftMouseClick();
-    Movement::leftMouseClick();
+    Movement::leftMouseHold(true);
+    std::this_thread::sleep_for(std::chrono::seconds(10));
+    Movement::leftMouseRelease();
     Movement::rightMouseRelease();
 
 }

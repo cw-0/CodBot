@@ -137,7 +137,7 @@ void Movement::leftMouseClick() {
     }
 }
 
-void Movement::leftMouseHold() {
+void Movement::leftMouseHold(bool recoilControl) {
     INPUT inputs{};
 
     inputs.type = INPUT_MOUSE;
@@ -146,6 +146,10 @@ void Movement::leftMouseHold() {
 
     if (SendInput(1, &inputs, sizeof(INPUT)) != 1) {
         std::cout << "Left Mouse Hold failed. Error: " << GetLastError() << '\n';
+    }
+
+    if (recoilControl) {
+        Movement::rotate(0, 500, 500, 1);
     }
 }
 
