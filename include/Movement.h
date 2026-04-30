@@ -14,6 +14,7 @@ public:
     static void changeWeapon();
     static void grenade();
     static void skipKillcam();
+    static void specialGadget();
     static void rotate(int totalDx, int totalDy, int steps, int delayMs);
     static void leftMouseClick();
     static void leftMouseHold(bool recoilControl=false);

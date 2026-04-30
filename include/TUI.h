@@ -5,10 +5,10 @@
 
 class TUI {
 public:
-    void run();
+    static void run();
+    static void printTitle();
 
 private:
-    static void printTitle();
     static int menu();
     static void settingsMenu();
     static void startBot(int waitTime);

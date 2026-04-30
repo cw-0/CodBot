@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <limits>
+#include "TUI.h"
 #include "Utils.h"
 
 
@@ -14,6 +15,7 @@
 
 void Utils::clearTerm() {
     std::system("cls");
+    TUI::printTitle();
 }
 
 void Utils::keyPress(WORD SCAN_CODE, const char* keyName) {

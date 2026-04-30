@@ -11,7 +11,7 @@ int CENTER_MINIMAP_X { 152 };
 int CENTER_MINIMAP_Y { 175 };
 bool IS_PAUSED{};
 bool IS_SOFT_PAUSED{};
-bool IN_GAME{};
+bool IN_GAME = true;
 bool RUNNING_BOT = true;
 int MISSED_IN_GAME_CHECK = 0;
 bool needThread = true;
@@ -89,8 +89,8 @@ void State::changeState() {
 
    if (GetKeyState(0xA3) & 0x8000) { // Right Ctrl Stop Bot
     Utils::clearTerm();
-    std::cout << "Bot Will Stop After Finishing Preset\n";
-    RUNNING_BOT = false;
+    std::cout << "Exiting\n";
+    exit(0);
    }
 
   }

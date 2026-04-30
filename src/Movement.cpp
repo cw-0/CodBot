@@ -205,9 +205,13 @@ void Movement::changeWeapon() {
 void Movement::skipKillcam() {
     WORD E_KEY = 0x12; // E key
     Utils::keyPress(E_KEY, "E Key");
-
 }
 
+void Movement::specialGadget() {
+    std::cout << "Using Special Gadget\n";
+    WORD X_KEY = 0x07; // X key
+    Utils::keyPress(X_KEY, "X Key");
+}
 
 
 // --- MOUSE MOVEMENTS ---
