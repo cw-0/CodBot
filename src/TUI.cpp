@@ -36,7 +36,7 @@ void TUI::run() {
             case 2:
                 settingsMenu();
             case 3:
-                ShellExecute(0, 0, "https://github.com/cw-0/AFK-bot-BlackOps6#usage", 0, 0, SW_SHOW);
+                ShellExecute(0, 0, "https://github.com/cw-0/CodBot#usage", 0, 0, SW_SHOW);
             default:
                 continue;
         }

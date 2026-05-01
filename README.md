@@ -1,4 +1,4 @@
-# AFK Black Ops 6 Bot
+# Call of Duty: AFK Bot
 Extremely Effective at Lowering Skill Based Matchmaking and Gaining XP
 
 **Rewritten in C++ for speed, compatibility, and ease of use**
@@ -110,7 +110,7 @@ Useful for tracking:
 
 Clone the repo:
 ```
-git clone https://github.com/cw-0/AFK-bot-BlackOps6.git
+git clone https://github.com/cw-0/CodBot.git
 cd AFK-bot-BlackOps6
 ```
 
