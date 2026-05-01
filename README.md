@@ -141,7 +141,7 @@ In Call of Duty settings set mini map player color to pink:
 
 ## TODO
 - [x] Add Hotkeys For Start/Stop
-- [x] Add "In Game" Detection (Open CV / Pixel Detection)
+- [x] Add "In Game" Detection
 - [x] Add Auto Select Loadout 
 - [x] Handle invalid input
 - [x] Polish TUI
