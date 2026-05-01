@@ -2,7 +2,7 @@
 Extremely Effective at Lowering Skill Based Matchmaking and Gaining XP
 
 **Rewritten in C++ for speed, compatibility, and ease of use**
-> original build can be find in "originalPythonBuild" branch
+> original build can be found in "originalPythonBuild" branch
 
 ![Nuke Medals](Assets/ImagesREADME/NukeMedals.png)
 
