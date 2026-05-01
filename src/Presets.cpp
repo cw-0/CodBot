@@ -10,6 +10,7 @@
 void Presets::commonSoldier() {
     std::cout << "Starting Common Soldier.\n";
     State::checkState();
+    RAN_ONCE = true;
 
     Movement::move(1, "forward", "none", 2, true);
     State::checkState();

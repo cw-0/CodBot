@@ -11,6 +11,8 @@
 #include "Movement.h"
 #include "Presets.h"
 #include "Script.h"
+#include <windows.h>
+#include <shellapi.h>
 #include "TUI.h"
 #include "Utils.h"
 
@@ -33,6 +35,8 @@ void TUI::run() {
 
             case 2:
                 settingsMenu();
+            case 3:
+                ShellExecute(0, 0, "https://github.com/cw-0/AFK-bot-BlackOps6#usage", 0, 0, SW_SHOW);
             default:
                 continue;
         }
@@ -73,6 +77,7 @@ int TUI::menu() {
         choice = -1;
         std::cout << "1. Start\n";
         std::cout << "2. Settings\n";
+        std::cout << "3. Help (Opens GitHub Repo)\n";
         std::cout << "0. Exit\n";
 
         std::cout << std::endl;
@@ -102,6 +107,7 @@ void TUI::startBot(int waitTime) {
     }
     State::checkState(); // Checks IN_GAME | PAUSED | SOFT_PAUSED and Pauses
     RUNNING_BOT = true;
+    RAN_ONCE = false;
     Utils::clearTerm();
     while (RUNNING_BOT){
         Presets::commonSoldier();

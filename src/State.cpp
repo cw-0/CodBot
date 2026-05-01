@@ -14,8 +14,9 @@ int LOADOUT_POSX { 228 };
 int LOADOUT_POSY { 125 };
 bool IS_PAUSED{};
 bool IS_SOFT_PAUSED{};
-bool IN_GAME = true;
+bool IN_GAME = false;
 bool RUNNING_BOT = true;
+bool RAN_ONCE = false;
 int MISSED_IN_GAME_CHECK = 0;
 bool needThread = true;
 
@@ -67,7 +68,9 @@ void State::checkInGame() {
     Logger::write((IS_PAUSED ? "Manually Paused\n" : "Paused. Not In Game\n"));
    while (IS_PAUSED || IS_SOFT_PAUSED) {
     if (!IS_PAUSED) {
-     // Utils::keyPress(0x39, "Space Bar"); // Selects Loadout
+     if (!RAN_ONCE) {
+      continue;
+     }
      std::this_thread::sleep_for(std::chrono::seconds(3));
      SetCursorPos(LOADOUT_POSX, LOADOUT_POSY); // Loadout1 Coord
      INPUT inputs[2] = {};
