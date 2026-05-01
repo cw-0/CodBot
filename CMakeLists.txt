@@ -15,6 +15,7 @@ add_executable(CodBot
         src/Presets.cpp
         src/State.cpp
         src/Logger.cpp
+        src/resources.rc
 )
 
 target_include_directories(CodBot PRIVATE
