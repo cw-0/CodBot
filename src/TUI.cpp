@@ -32,11 +32,16 @@ void TUI::run() {
             case 1:
                 Logger::write("Start Bot Selected In Menu");
                 startBot(3);
+                continue;
 
             case 2:
                 settingsMenu();
+                continue; // this continue stops it from running ShellExecute when going from Settings -> Main menu
+
             case 3:
                 ShellExecute(0, 0, "https://github.com/cw-0/CodBot#usage", 0, 0, SW_SHOW);
+                continue;
+
             default:
                 continue;
         }
