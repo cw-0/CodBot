@@ -8,8 +8,8 @@ extern bool needThread;
 
 class State {
 public:
-    static void checkInGame();
-    static void checkState();
-    static void changeState();
-    static void endThreads();
+  static void checkInGame();
+  static void checkState();
+  static void changeState();
+  static void endThreads();
 };

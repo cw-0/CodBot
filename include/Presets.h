@@ -2,7 +2,7 @@
 
 class Presets {
 public:
-    static void crackhead();
-    static void commonSoldier();
-    static void randomScripts();
+  static void crackhead();
+  static void commonSoldier();
+  static void randomScripts();
 };
