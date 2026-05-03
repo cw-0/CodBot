@@ -9,7 +9,7 @@ Extremely Effective at Lowering Skill Based Matchmaking and Gaining XP
 
 ## Overview
 
-AFK Black Ops 6 Bot is a C++ rewrite of my original Python automation bot.
+This AFK Black Ops 6 Bot is a C++ rewrite of my original Python automation bot.
 
 The original version used libraries such as `pynput`, `pyautogui`, and `OpenCV` to simulate keyboard/mouse input and
 detect game UI elements. This rewrite moves the core automation logic into C++ using the Windows API for faster input
@@ -117,7 +117,7 @@ Clone the repo:
 
 ```
 git clone https://github.com/cw-0/CodBot.git
-cd AFK-bot-BlackOps6
+cd CodBot 
 ```
 
 Create build folder:
@@ -139,11 +139,20 @@ cmake --build .
 
 ## Usage
 
-In Call of Duty settings set mini map player color to pink:
-> interface > gameplay hud > hud presets > colors > You > [select the bottom right color]
-
 > [!NOTE]
+> Expects Default Mini Map Location and Size
 > This has not been tested on a non 1920x1080 display
+
+0. Build & Run (directions above)
+1. In Call of Duty settings set mini map player color to pink:
+    - interface > gameplay hud > hud presets > colors > You > [select the bottom right color]
+
+2. Run CodBot.exe and enter `1` to start the bot
+3. Search for a match
+4. The bot will
+    - Select your top loadout
+    - play for you indefinitely
+    - Search for a new match if it ever gets kicked
 
 ---
 
@@ -155,6 +164,7 @@ In Call of Duty settings set mini map player color to pink:
 - [x] Handle invalid input
 - [x] Polish TUI
 - [x] Add Logs
+- [x] Add kicked from match detection and handling
 - [ ] Add setting for prefered Loadout Slot to choos]
 - [ ] Add settings
 - [ ] Add More Randomness

@@ -87,6 +87,7 @@ void State::checkInGame() {
         }
       } // End of Detect Loadout
 
+      std::this_thread::sleep_for(std::chrono::seconds(2));
       // Detect if Kicked
       c = GetPixel(dng, KICKED_DETECTION_X, KICKED_DETECTION_Y);
       R = static_cast<int>(GetRValue(c));
