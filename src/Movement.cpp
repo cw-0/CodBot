@@ -217,8 +217,8 @@ void Movement::skipKillcam() {
 void Movement::specialGadget() {
   std::cout << "Using Special Gadget\n";
   std::this_thread::sleep_for(std::chrono::seconds(1));
-  WORD X_KEY = 0x2D; // X key
-  Utils::keyPress(X_KEY, "X Key");
+  WORD C_KEY = 0x2E; // C key
+  Utils::keyPress(C_KEY, "C Key");
   std::this_thread::sleep_for(std::chrono::seconds(1));
 }
 
