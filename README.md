@@ -171,7 +171,7 @@ cmake --build .
 - [x] Add Logs
 - [x] Add kicked from match detection and handling
 - [ ] Add Custom keybinds
-- [ ] Add setting for prefered Loadout Slot to choos]
+- [ ] Add setting for preferred Loadout Slot to choose
 - [ ] Add settings
 - [ ] Add More Randomness
 - [ ] Add GUI
